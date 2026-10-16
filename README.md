@@ -1,18 +1,18 @@
-# Codetalks Tap
+# CodeTalks Homebrew tap
 
-## How do I install these formulae?
+## Diffbell
 
-`brew install codetalks/tap/<formula>`
+[Diffbell](https://github.com/CodeTalks/diffbell) watches key files across your
+projects with Watchman and sends a Telegram message when they change.
 
-Or `brew tap codetalks/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "codetalks/tap"
-brew "<formula>"
+```bash
+brew install codetalks/tap/diffbell
+diffbell install         # starts the agent and opens the web UI
 ```
+
+After every `brew upgrade diffbell`, run `diffbell install` again to restart the
+agent on the new version.
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew help`, `man brew` or [Homebrew's documentation](https://docs.brew.sh).
