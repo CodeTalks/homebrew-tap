@@ -3,8 +3,8 @@ class Diffbell < Formula
 
   desc "Watch key files across projects and get Telegram messages when they change"
   homepage "https://github.com/CodeTalks/diffbell"
-  url "https://github.com/CodeTalks/diffbell/releases/download/v0.1.1/diffbell-0.1.1.tar.gz"
-  sha256 "68fd56700fedb12fde441d25a03f4096d4035377ee7cf4366b772f604d31b4d8"
+  url "https://github.com/CodeTalks/diffbell/releases/download/v0.1.2/diffbell-0.1.2.tar.gz"
+  sha256 "01868bfd1fd702b4f56b2ddf544816af0861539b0dacbbf163a5a08d64c1896a"
   license "MIT"
 
   depends_on "certifi" => :no_linkage
