@@ -88,8 +88,8 @@ class Diffbell < Formula
     <<~EOS
       Start the agent (it opens the web UI to set up Telegram):
         diffbell install
-      After every `brew upgrade diffbell`, run `diffbell install` again to
-      restart the agent on the new version.
+      Later, `brew upgrade diffbell` is all an upgrade needs: the agent restarts
+      itself on the new version within about a minute.
     EOS
   end
 
