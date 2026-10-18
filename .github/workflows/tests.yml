@@ -17,7 +17,8 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ macos-26 ] # the formulae here are macOS-only
+        # macOS only (the formulae are): one bottle per macOS version built here.
+        os: [ macos-15, macos-26 ]
     runs-on: ${{ matrix.os }}
     permissions:
       actions: read
