@@ -12,6 +12,12 @@ class Diffbell < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/CodeTalks/homebrew-tap/releases/download/diffbell-0.1.5"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "dafe219ec6f2994a05cdfbfe2dd6916edbdb71786cffbfac18fc8662a82c67f3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8f0f25b35ebb9605a2f1011d9763bb99ec1be8b1753e09b84417f539350077f2"
+  end
+
   depends_on "certifi" => :no_linkage
   depends_on :macos
   depends_on "pydantic" => :no_linkage
