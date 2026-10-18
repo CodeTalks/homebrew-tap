@@ -3,8 +3,8 @@ class Diffbell < Formula
 
   desc "Watch key files across projects and get Telegram messages when they change"
   homepage "https://github.com/CodeTalks/diffbell"
-  url "https://github.com/CodeTalks/diffbell/releases/download/v0.1.2/diffbell-0.1.2.tar.gz"
-  sha256 "01868bfd1fd702b4f56b2ddf544816af0861539b0dacbbf163a5a08d64c1896a"
+  url "https://github.com/CodeTalks/diffbell/releases/download/v0.1.3/diffbell-0.1.3.tar.gz"
+  sha256 "98b0d5047eab2e3910b466b9002dad107e7c7d46e211f1003954e9492c0f6b84"
   license "MIT"
 
   depends_on "certifi" => :no_linkage
@@ -88,8 +88,8 @@ class Diffbell < Formula
     <<~EOS
       Start the agent (it opens the web UI to set up Telegram):
         diffbell install
-      After every `brew upgrade diffbell`, run `diffbell install` again to
-      restart the agent on the new version.
+      Later, `brew upgrade diffbell` is all an upgrade needs: the agent restarts
+      itself on the new version within about a minute.
     EOS
   end
 

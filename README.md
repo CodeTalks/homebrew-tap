@@ -10,8 +10,8 @@ brew install codetalks/tap/diffbell
 diffbell install         # starts the agent and opens the web UI
 ```
 
-After every `brew upgrade diffbell`, run `diffbell install` again to restart the
-agent on the new version.
+Upgrades need only `brew upgrade diffbell`: the agent restarts itself on the new
+version within about a minute, and Telegram tells you (silently).
 
 ## Documentation
 
