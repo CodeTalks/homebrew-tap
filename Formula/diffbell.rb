@@ -7,6 +7,11 @@ class Diffbell < Formula
   sha256 "98b0d5047eab2e3910b466b9002dad107e7c7d46e211f1003954e9492c0f6b84"
   license "MIT"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "certifi" => :no_linkage
   depends_on :macos
   depends_on "pydantic" => :no_linkage
